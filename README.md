@@ -4,11 +4,76 @@
 Application testing : Postman <br>
 Language : C# <br>
 Framework : .NET Core 6 <br>
+Database Name : Master Data <br>
 
-1. List of Movie
-   - EndPoint : /Movies
-   - Method : GET
-   - Description : return the details of a movies in JSON format
+<h3>1. List of Movie</h3>
+   - EndPoint : /Movies <br>
+   - Method : GET <br>
+   - Description : return the details of a movies in JSON format <br><br>
+     
+<img width="750" height="500" alt="List Movies" src="https://github.com/sance1/API-Xsis/assets/92260329/9a0a58bf-83fa-4810-9450-f999c0359e34">
+
+<h3>2. Detail of Movie</h3>
+   - EndPoint : /Movies/:ID <br>
+   - Method : GET <br>
+   - Description : return the details of a movies in JSON format <br><br>
+
+<img width="750" height="500" alt="Detail - Success" src="https://github.com/sance1/API-Xsis/assets/92260329/8f4ded5b-28bc-4cf7-89de-cf06a87f6e08">
+
+<h3>3. Add New Movie</h3>
+   - EndPoint : /Movies <br>
+   - Method : POST <br>
+   - Description : Add a Movie to the Movies list, the data will be sent as a JSON in the request body <br><br>
+     
+<img width="750" height="500" alt="Input - Success" src="https://github.com/sance1/API-Xsis/assets/92260329/461603df-db34-436b-924b-994ee2b11f9d">
+
+<h3>4. Update Movie</h3>
+   - EndPoint : /Movies/:ID <br>
+   - Method : PATCH <br>
+   - Description : Add a Movie to the Movies list, the data will be sent as a JSON in the request body  <br><br>
+
+<img width="750" height="500" alt="Update - Petch Movie" src="https://github.com/sance1/API-Xsis/assets/92260329/e7859c8b-895a-4cf3-b0d5-9a6668147bb0">
+
+<h3>5. Delete Movie</h3>
+   - EndPoint : /Movies/:ID <br>
+   - Method : DELETE <br>
+   - Description : Delete Movie from Database <br><br>
+
+<img width="750" height="500" alt="Delete - Success" src="https://github.com/sance1/API-Xsis/assets/92260329/048fe2c1-6852-41d0-92b2-38e0e64d03ce">
+
+<h3>6. Error</h3>
+Not Found - This message will appear when data is not found <br>
+<img width="225" alt="Detail Movie Not Found" src="https://github.com/sance1/API-Xsis/assets/92260329/16b2484e-15b4-4c3f-b120-7dfd6a424d09"> <br>
+Bad Request - This message will appear when the data entered does not match the variable data type used <br>
+<img width="225" alt="Input - Bad Request " src="https://github.com/sance1/API-Xsis/assets/92260329/ff80b1a2-24f7-4b54-ac8c-80f9e4486ac7">
+
+<h3> 7. Data in Database</h3>
+Here sample data in database <br><br>
+
+<img width="750" height="500" alt="Database" src="https://github.com/sance1/API-Xsis/assets/92260329/5d626b98-c725-485f-987d-b259a968319a">
+
+
+
+
+
+
+
+
+
+
+     
+     
+
+
+
+
+
+
+     
+
+
+
+
   
    
      
