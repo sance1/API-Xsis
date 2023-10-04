@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{D68FFF15-CEDB-4C97-82F2-CC0B52C10349}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.AssessmentBackendDeveloperXsis2023 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AssessmentBackendDeveloperXsis2023/Controllers/MoviesController.cs">
+    <Files>
+      <File FileName="AssessmentBackendDeveloperXsis2023/Program.cs" Line="1" Column="37" />
+      <File FileName="AssessmentBackendDeveloperXsis2023/appsettings.json" Line="3" Column="140" />
+      <File FileName="AssessmentBackendDeveloperXsis2023/Controllers/HomeController.cs" Line="12" Column="5" />
+      <File FileName="AssessmentBackendDeveloperXsis2023/Data/DataContext.cs" Line="11" Column="1" />
+      <File FileName="AssessmentBackendDeveloperXsis2023/Models/Movie.cs" Line="8" Column="19" />
+      <File FileName="AssessmentBackendDeveloperXsis2023/Interface/IRepositories.cs" Line="8" Column="21" />
+      <File FileName="AssessmentBackendDeveloperXsis2023/Data/Repositories.cs" Line="21" Column="26" />
+      <File FileName="AssessmentBackendDeveloperXsis2023/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="AssessmentBackendDeveloperXsis2023/Controllers/MoviesController.cs" Line="71" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AssessmentBackendDeveloperXsis2023" expanded="True">
+            <Node name="AssessmentBackendDeveloperXsis2023" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="MoviesController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Interface" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
