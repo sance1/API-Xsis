@@ -48,7 +48,7 @@ Bad Request - This message will appear when the data entered does not match the 
 <img width="225" alt="Input - Bad Request " src="https://github.com/sance1/API-Xsis/assets/92260329/ff80b1a2-24f7-4b54-ac8c-80f9e4486ac7">
 
 <h3> 7. Data in Database</h3>
-Here sample data in database <br><br>
+The following is an example of data in the database <br><br>
 
 <img width="750" height="500" alt="Database" src="https://github.com/sance1/API-Xsis/assets/92260329/5d626b98-c725-485f-987d-b259a968319a">
 
