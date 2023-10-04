@@ -32,14 +32,15 @@ namespace AssessmentBackendDeveloperXsis2023.Data
             {
                 var data = _context.Movies
                     .FirstOrDefault(x => x.Id == newMovie.Id) ?? new Movie();
-
-                if (data.Id == 0) _context.Movies.Add(newMovie);
+                
                 data.Title = newMovie.Title;
                 data.Description = newMovie.Description;
                 data.Rating = newMovie.Rating;
                 data.Image = newMovie.Image;
                 data.Created_At = newMovie.Created_At;
                 data.Updated_At = newMovie.Updated_At;
+
+                if (data.Id == 0) _context.Movies.Add(newMovie);
                 _context.SaveChanges();
 
             }
