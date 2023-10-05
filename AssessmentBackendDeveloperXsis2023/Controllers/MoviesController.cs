@@ -43,10 +43,11 @@ namespace AssessmentBackendDeveloperXsis2023.Controllers
         {
             if (newMovie == null) return BadRequest();
             var movies = _repository.movies();
-            int newMovieId = movies.Count + 1;
-            newMovie.Id = newMovieId;
+            var findMovie = movies.Find(m => m.Id == newMovie.Id);
+            if (findMovie != null) return StatusCode(500, "Failed Add Data");
+            if (newMovie.Id == 0) return NotFound("Id Not Found");
             _repository.AddOrUpdateMovie(newMovie);
-            return CreatedAtAction("Get", new { id = newMovieId }, newMovie);
+            return CreatedAtAction("Get", new { id = newMovie.Id }, newMovie);
         }
 
         // PATCH: Movies/1
