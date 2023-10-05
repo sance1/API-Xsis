@@ -44,8 +44,8 @@ namespace AssessmentBackendDeveloperXsis2023.Controllers
             if (newMovie == null) return BadRequest();
             var movies = _repository.movies();
             var findMovie = movies.Find(m => m.Id == newMovie.Id);
-            if (findMovie != null) return StatusCode(500, "Failed Add Data");
-            if (newMovie.Id == 0) return NotFound("Id Not Found");
+            if (findMovie != null) return BadRequest("Failed to add data");
+            if (newMovie.Id == 0) return NotFound("Id not found");
             _repository.AddOrUpdateMovie(newMovie);
             return CreatedAtAction("Get", new { id = newMovie.Id }, newMovie);
         }
@@ -55,6 +55,8 @@ namespace AssessmentBackendDeveloperXsis2023.Controllers
         public ActionResult<Movie> Patch(int id, [FromBody] Movie updatedMovie)
         {
             var movies = _repository.movies();
+            var checkId = id == updatedMovie.Id;
+            if (!checkId) return BadRequest("IDs cannot be the same");
             var findMovie = movies.Find(m => m.Id == id);
             if (findMovie == null) return NotFound();
             updatedMovie.Updated_At = DateTime.Now;
